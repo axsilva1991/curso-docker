@@ -1,5 +1,5 @@
 # Curso-ubuntu
-* ``docker ps`` - verifica containers ativos
+* ``docker ps`` - verifica containers em execução.
 * ``docker ps -a`` - todos os containers já criados.
 * ``docker run -it`` - roda o docker acessando o terminal do container criado.
 * ``docker start CONTAINER_ID`` - sobe o container
