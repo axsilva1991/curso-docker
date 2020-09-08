@@ -5,7 +5,7 @@
 * docker start CONTAINER_ID - sobe o container
 * docker stop CONTAINER_ID - desce o container
 ###### Listando as imagens
-* ``docker images
+* ``docker images``
 ###### Removendo containers
 * docker rm CONTAINER_ID - remove o container localmente.
 * docker container prune - remove todos os containers inativos.
