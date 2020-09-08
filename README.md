@@ -5,5 +5,5 @@
 * docker start CONTAINER_ID - sobe o container
 * docker stop CONTAINER_ID - desce o container
 ## Principais estados de um container
-1 - Runing
+1 - Runing<br>
 2 - Stoped
