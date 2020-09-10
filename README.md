@@ -65,4 +65,11 @@ cc3c78440f98e4c94ac6bc117c942a16262ce36886a73274bdf2b8b3b94d6b59``
 Responsável pela orquestração da subida de multiplos containers. configurado através de um arquivo <br>docker-compose.yaml<br>.
 ````
 
+usando o docker compose eu posso 
+``
+docker-compose build - monto a imagem
+docker-compose up - ativo a imagem
+docker-compose down - paro a imagem
+docker-compose restart - reinicia as imagens
 
+``
