@@ -37,5 +37,7 @@
 * ``docker run -it -v "C:\Users\Alura\Desktop:/var/www" ubuntu`` 
 Lembrando que quando voce remove a imagen o volume fica salvo no <b>Docker Host</b>.
 ######## Subindo o docker usando um código externo setando a porta 8080 para a porta 3000 do meu container .
-* ``docker run -p 8080:3000 -v "C:\docker\volume-exemplo:/var/www" -w "/var/www"  node npm start* ``
+* ``docker run -d -p 8080:3000 -v "C:\docker\volume-exemplo:/var/www" -w "/var/www"  node npm start ``
 ``-w`` working directory onde o comando será executado.
+``-d`` faz com o que o terminal não fique travado.
+``-v`` determina volume
