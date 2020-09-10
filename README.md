@@ -31,3 +31,8 @@
 
 ## Para todos os container imediatamente
 * ``docker stop -t 0 $(docker ps -q)`` 
+
+## Criando um volume
+* ``docker run -v "/var/www" ubuntu`` 
+* ``docker run -it -v "C:\Users\Alura\Desktop:/var/www" ubuntu`` 
+Lembrando que quando voce remove a imagen o volume fica salvo no <b>Docker Host</b>.
