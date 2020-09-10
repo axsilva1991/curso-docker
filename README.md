@@ -60,3 +60,9 @@ EXPOSE 3000``
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 PS C:\docker\volume-exemplo> docker run -d -p 8080:3000 andersonxs/node
 cc3c78440f98e4c94ac6bc117c942a16262ce36886a73274bdf2b8b3b94d6b59``
+
+## Docker Compose
+Responsável pela orquestração da subida de multiplos containers. configurado através de um arquivo <br>docker-compose.yaml<br>.
+````
+
+
