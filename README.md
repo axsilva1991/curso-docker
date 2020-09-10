@@ -41,3 +41,22 @@ Lembrando que quando voce remove a imagen o volume fica salvo no <b>Docker Host<
 ``-w`` working directory onde o comando será executado.
 ``-d`` faz com o que o terminal não fique travado.
 ``-v`` determina volume
+
+## Criando uma imagem
+- Criando um arquivo Dockerfile
+``FROM node:latest
+MAINTAINER Anderson Xavier
+COPY . /var/www
+WORKDIR /var/www
+RUN npm install
+ENTRYPOINT npm start
+EXPOSE 3000``
+- Construindo a Imagem
+``docker build -f .\Dockerfile -t andersonxs/node .``
+- Construindo criando o container
+``docker run -d -p 8080:3000 andersonxs/node``
+- verificando se o container foi iniciado.
+``PS C:\docker\volume-exemplo> docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+PS C:\docker\volume-exemplo> docker run -d -p 8080:3000 andersonxs/node
+cc3c78440f98e4c94ac6bc117c942a16262ce36886a73274bdf2b8b3b94d6b59``
