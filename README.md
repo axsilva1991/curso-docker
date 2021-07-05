@@ -29,6 +29,9 @@
 ## Editando uma variável de ambiente 
 * ``docker run -d -P -e AUTHOR=""Anderson Xavier da Silva dockersamples/static-site`` - (-e - permite que voce selecione uma váriavel de ambiente.) 
 
+## Como acessar um container em execução
+* ``docker exec -ti CONTAINER_ID /diretorio por exemplo /bin/sh``
+
 ## Para todos os container imediatamente
 * ``docker stop -t 0 $(docker ps -q)`` 
 
@@ -73,3 +76,4 @@ docker-compose down - paro a imagem
 docker-compose restart - reinicia as imagens
 
 ``
+
